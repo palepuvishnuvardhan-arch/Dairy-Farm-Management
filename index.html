@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Farm Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
+LB" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap
+" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dairyfarm.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="heading">Dairy Farm Management</h2>
+    </header>
+    <nav>
+        <div class="nav-links">
+            <a href="#farmInfo">Farm Information</a>
+            <a href="#livestockInfo">Livestock Records</a>
+            <a href="#milkProduction">Milk Production</a>
+            <a href="#gheeProduction">Ghee Production</a>
+            <a href="#contactInfo">Contact Us</a>
+            <a href="#bookingInfo">Milk/Ghee Booking</a>
+        </div>
+        <button type="button" class="dark-mode-toggle" id="darkModeBtn" onclick="toggleDarkMode()">
+            🌙 Dark Mode
+        </button>
+    </nav>
+
+    <main>
+        <section id="farmInfo">
+            <h3>
+                <span class="heading">Farm Information</span>
+            </h3>
+            <p><b>Farm Name:</b> Bangalore Dairy Farm</p>
+            <p><b>Owner:</b> Vishnu</p>
+            <p><b>Location:</b> Bangalore</p>
+        </section>
+        <section id="livestockInfo">
+            <h3 class="center-heading">
+                <span class="heading">Livestock Records</span>
+            </h3>
+            <div class="image">
+                <article>
+                    <figure>
+                        <img src="../Images/cow.jpeg" alt="Cow" width="130" height="130" loading="lazy">
+                    </figure>
+                    <p><b>Cows:</b> 50</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="../Images/buffalo.jpeg" alt="Buffalo" width="130" height="130" loading="lazy">
+                    </figure>
+                    <p><b>Buffalo:</b> 30</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="../Images/goat.jpeg" alt="Goat" width="130" height="130" loading="lazy">
+                    </figure>
+                    <p><b>Goats:</b> 20</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="milkProduction">
+            <h3 class="center-heading">
+                <span class="heading">Milk Production</span>
+            </h3>
+            <figure class="singleimg">
+                <img src="../Images/milk.jpeg" alt="Fresh Milk" width="200" height="200" loading="lazy">
+            </figure>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Cow Milk (Liters)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="2026-07-01">2026-07-01</time></td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2026-06-30">2026-06-30</time></td>
+                                <td>480</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Buffalo Milk (Liters)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="2026-07-01">2026-07-01</time></td>
+                                <td>240</td>
+
+                            </tr>
+                            <tr>
+                                <td><time datetime="2026-06-30">2026-06-30</time></td>
+                                <td>150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Goat Milk (Liters)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="2026-07-01">2026-07-01</time></td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2026-06-30">2026-06-30</time></td>
+                                <td>40</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <p class="m-0"><b>Total Milk Production (Liters):</b></p>
+                    <mark class="total">800</mark>
+                </div>
+            </div>
+        </section>
+        <section id="gheeProduction">
+            <h3 class="center-heading">
+                <span class="heading">Ghee Production</span>
+            </h3>
+            <figure class="singleimg">
+
+                <img src="../Images/ghee.jpeg" alt="Pure Ghee" width="200" height="200" loading="lazy">
+            </figure>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Cow Ghee (Grams)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="2026-07-01">2026-07-01</time></td>
+                                <td>800</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2026-06-30">2026-06-30</time></td>
+                                <td>600</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Buffalo Ghee (Grams)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="2026-07-01">2026-07-01</time></td>
+                                <td>850</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2026-06-30">2026-06-30</time></td>
+                                <td>700</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Goat Ghee (Grams)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="2026-07-01">2026-07-01</time></td>
+                                <td>320</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2026-06-30">2026-06-30</time></td>
+                                <td>240</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <p class="m-0"><b>Total Ghee Production (Grams):</b></p>
+                    <mark class="total">1,970</mark>
+                </div>
+            </div>
+        </section>
+        <section class="booking" id="bookingInfo">
+            <form id="bookingForm" onsubmit="submitBooking(event)">
+                <fieldset>
+                    <legend class="heading center-heading">
+                        <h3>Milk/Ghee Booking Form</h3>
+                    </legend>
+                    <label for="customerName">Customer Name:</label>
+                    <input type="text" id="customerName" placeholder="Enter your name" pattern="[A-Za-z\s.]+"
+                        autocomplete="name">
+                    <label for="customerEmail">Email:</label>
+
+                    <input type="email" id="customerEmail" placeholder="Enter your email" autocomplete="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter 10-digit phone number" inputmode="numeric"
+                        pattern="[0-9]{10}" autocomplete="tel">
+                    <label for="product">Select Product:</label>
+                    <select id="product" onchange="productChanged()">
+                        <option value="">-- Select Product --</option>
+                        <option value="Milk">Milk</option>
+                        <option value="Ghee">Ghee</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" placeholder="Enter quantity" min="1" required>
+                    <button type="submit">Submit Booking</button>
+                </fieldset>
+            </form>
+            <p id="bookingMessage" aria-live="polite"></p>
+        </section>
+    </main>
+    <footer>
+        <address id="contactInfo">
+            <h2 class="mb-4"><span class="heading">Contact Us</span></h2>
+            <p><b>Address:</b> 123 Farm Road, Agricultural Area</p>
+            <p><b>Phone:</b> <a href="tel:+911234567890">+91 1234567890</a></p>
+            <p><b>Email:</b> <a href="mailto:bangaloredairy@gmail.com">bangaloredairy@gmail.com</a></p>
+        </address>
+    </footer>
+    <script src="dairyfarm.js"></script>
+</body>
+
+</html>
